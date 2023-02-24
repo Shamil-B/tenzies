@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu',Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+/* Header Start */
+
+.header{
+    display: flex;
+    padding: 1.72rem;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img{
+    width: 5rem;
+}
+
+.header .title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #00ABCA; 
+}
+
+.theme{
+    position: relative;
+    height: 1.8rem;
+    width: 3rem;
+    background: #21222A;
+    margin-right: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.toggler{
+    position: absolute;
+    width: 1.8rem;
+    height: 1.7rem;
+    background-color: white;
+    border-radius: 50%;
+}
+/* Header End */
+
+/* Main Start */
+
+.main{
+    height: 100vh;
+    background-color: #eee;
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    font-weight: 500;
+}
+
+.main h1{
+    font-size: 2.4rem;
+}
+
+.main ul{
+    list-style-type: none;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.main ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #00ABCA; /* Change the color */
+    font-weight: 700; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    font-size: 2rem;
+  }
+
+
+.game-section{
+    height: 90vh;
+    background: #0B2434;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.content{
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: #eee;
+    padding: 2rem 1rem;
+    box-shadow: 1px 1px 15px #888,-1px -1px 15px #888;
+}
+
+.content ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 60rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.content ul li{
+    width: 10rem;
+    height: 10rem;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 2px 2px 14px #999, -2px -2px 14px #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    border-radius: 2rem;
+}
+
+button{
+    margin-top: 2rem;
+    width: 25rem;
+    height: 4rem;
+    background:#5035FF;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.game-section .freezed {
+    background: #59E391;
+}
+
+.winner-window{
+    position: absolute;
+    margin: auto;
+    width: 50rem;
+    height: 20rem;
+    background: rgba(114, 114, 114,0.9);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+    box-shadow: 2px 2px 14px #999, -2px -2px 14px #999;
+    transition: 0.4s;
+}
+
+.not-visible{
+    display: none;
+}    
+
+.winner-window h1{
+
+}
+
+/* background: #59E391; */
